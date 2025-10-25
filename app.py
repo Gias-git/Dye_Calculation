@@ -18,9 +18,11 @@ client = OpenAI(
 )
 
 extra_headers = {
-    "HTTP-Referer": os.getenv("YOUR_SITE_URL"),
-    "X-Title": os.getenv("YOUR_SITE_NAME"),
+    "HTTP-Referer": "",
+    "X-Title": "",
 }
+
+
 
 # --- Flask setup ---
 app = Flask(__name__)
